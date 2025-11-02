@@ -1,0 +1,16 @@
+
+embabel-agent-api/src/main/resources/mcp/**
+
+/target/**
+*/target/**
+*/*/target/**
+*/*/*/target/**
+
+.idea/**
+
+.claude/settings.local.json
+
+**/*.log
+.env
+*.iml
+.sdkmanrc
