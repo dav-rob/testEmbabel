@@ -14,3 +14,4 @@ embabel-agent-api/src/main/resources/mcp/**
 .env
 *.iml
 .sdkmanrc
+.DS_Store
