@@ -1,0 +1,35 @@
+{
+  "context": {
+    "fileName": "GEMINI.md",
+    "fileFiltering": {
+      "respectGitIgnore": true,
+      "respectGeminiIgnore": true,
+      "enableRecursiveFileSearch": true
+    }
+  },
+
+  "tools": {
+    // Run in a sandbox if you want extra safety; set to false to run directly.
+    "sandbox": false,
+
+    // Automatically allow *specific* shell commands without asking.
+    // Everything else (including `git commit`) will still prompt.
+    "allowed": [
+      "run_shell_command(git status)",
+      "run_shell_command(git add)",
+      "run_shell_command(git diff)",
+      "run_shell_command(git log)",
+      "run_shell_command(npm install)",
+      "run_shell_command(pnpm install)",
+      "run_shell_command(yarn install)",
+      "run_shell_command(pip install)"
+    ]
+  },
+
+  "security": {
+    // Treat this folder as trusted so file edits are generally permissive.
+    "folderTrust": {
+      "enabled": true
+    }
+  }
+}

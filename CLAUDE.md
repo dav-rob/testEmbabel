@@ -1,6 +1,6 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+This file provides guidance when working with code in this repository.
 
 ## Project Overview
 
@@ -11,7 +11,6 @@ This is an Embabel agent project built on the Embabel framework for developing L
 This project was initialized from [embabel/java-agent-template](https://github.com/embabel/java-agent-template) and has been enhanced with the following additions:
 
 **Configuration & Documentation:**
-- ✅ **CLAUDE.md** - This comprehensive guide for Claude Code usage
 - ✅ **.env.example** - Template for API key configuration (security best practice)
 - ✅ **.gitignore** - Modified to include `.env` (prevent API key commits)
 - ✅ **src/test/resources/application.properties** - Test configuration (base template only has .gitkeep)

@@ -13,7 +13,7 @@
     <artifactId>TestEmbabel</artifactId>
     <version>0.1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>My first agent</name>
+    <name>Test Embabel Agent</name>
     <description>Generated agent project</description>
 
     <properties>
