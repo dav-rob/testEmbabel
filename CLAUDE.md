@@ -42,24 +42,24 @@ This project was initialized from [embabel/java-agent-template](https://github.c
 
 ### Build
 ```bash
-mvn clean install
+mvnw clean install
 # Or with API keys for integration tests
-source .env && mvn clean install
+source .env && mvnw clean install
 ```
 
 ### Run Tests
 ```bash
 # Unit tests (no API key required)
-mvn test -Dtest=WriteAndReviewAgentTest
+mvnw test -Dtest=WriteAndReviewAgentTest
 
 # Integration tests (requires API keys)
-source .env && mvn test
+source .env && mvnw test
 
 # Run a specific test class
-mvn test -Dtest=WriteAndReviewAgentTest
+mvnw test -Dtest=WriteAndReviewAgentTest
 
 # Run a specific test method
-mvn test -Dtest=WriteAndReviewAgentTest#testWriteAndReviewAgent
+mvnw test -Dtest=WriteAndReviewAgentTest#testWriteAndReviewAgent
 ```
 
 ### Run Application
@@ -79,7 +79,7 @@ Once in the Spring Shell:
 GitHub Actions automatically runs on every push and pull request via `.github/workflows/maven.yml`:
 - Sets up Java 21 (Temurin distribution)
 - Configures Testcontainers for integration tests
-- Executes `mvn -U -B test verify` to build and run all tests
+- Executes `mvnw -U -B test verify` to build and run all tests
 - Uses Maven dependency caching for faster builds
 - **SonarCloud is optional**: Currently commented out in the workflow. Can be enabled for code quality analysis (free for public repos, requires setup at sonarcloud.io and adding `SONAR_TOKEN` to GitHub secrets).
 

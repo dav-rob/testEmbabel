@@ -7,11 +7,9 @@
       "enableRecursiveFileSearch": true
     }
   },
-
   "tools": {
     // Run in a sandbox if you want extra safety; set to false to run directly.
     "sandbox": false,
-
     // Automatically allow *specific* shell commands without asking.
     // Everything else (including `git commit`) will still prompt.
     "allowed": [
@@ -25,11 +23,13 @@
       "run_shell_command(pip install)"
     ]
   },
-
   "security": {
     // Treat this folder as trusted so file edits are generally permissive.
     "folderTrust": {
       "enabled": true
     }
+  },
+  "general": {
+    "previewFeatures": true
   }
 }
