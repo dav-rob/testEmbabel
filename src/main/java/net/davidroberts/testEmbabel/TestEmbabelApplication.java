@@ -23,7 +23,7 @@ import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 
 
 @SpringBootApplication
-@EnableAgents(loggingTheme = LoggingThemes.STAR_WARS)
+@EnableAgents
 @ConfigurationPropertiesScan
 class TestEmbabelApplication {
     public static void main(String[] args) {
